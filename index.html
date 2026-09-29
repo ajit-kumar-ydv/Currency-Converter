@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CurrencyConverter</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="bg-pink-400 flex items-center h-screen">
+  <div class="container flex-col gap-4 mx-auto shadow-md shadow-yellow-100 bg-slate-400 max-w-md p-5 rounded-md">
+    <h1 class="bg-yellow-200 shadow-md shadow-green-100 p-2 text-center font-mono font-extrabold text-lg rounded-md">
+      Currency Converter</h1>
+    <form action="" class="p-5 ">
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="text" value="100"
+          class=" text-black font-semibold w-90 p-1 pl-5 mt-2 mb-3 border border-none outline-none rounded-sm shadow-sm shadow-white">
+      </div>
+
+      <div class="dropdown flex justify-between items-center mt-5 mb-3">
+
+        <div class="from ">
+          <p>From</p>
+          <div class="select-container flex pl-1 shadow-sm shadow-white">
+            <img src="https://flagsapi.com/US/flat/64.png" class="max-w-10">
+            <select name="from"
+              class=" text-black font-semibold  p-1 border-none outline-none ">
+              <!-- <option value="USD" selected>USD</option> -->
+            </select>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-right-left"></i>
+
+        <div class="to">
+          <p>To</p>
+          <div class="select-container flex  shadow-sm shadow-white pl-1 rounded-md">
+            <img src="https://flagsapi.com/IN/flat/64.png" class="max-w-10">
+            <select name="to"
+              class=" text-black-800 font-semibold  p-1 border-none outline-none ">
+              <!-- <option value="USD">USD</option> -->
+
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="msg"></div>
+      <button class="bg-black text-white font-semibold  p-1 pl-5 mt-5 mb-3 border-none rounded-md w-90">Get Exchange
+        Rate</button>
+
+    </form>
+  </div>
+
+
+  <script src="codes.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
